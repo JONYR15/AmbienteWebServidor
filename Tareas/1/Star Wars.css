@@ -1,0 +1,82 @@
+h1{color:black; text-align:center;padding: 0px;margin: 0;
+	text-shadow: 1px 1px 1px red;font-weight: bold;font-size: 80px;cursor: pointer;}
+
+p{font-size: 18;font: oblique bold 150% cursive;color: white}
+
+h2{color:red;position: center;margin: 0;text-shadow: 1px 1px 1px black;font-weight: bold}
+body{width:auto;height: 1100px;margin:0px;background-image: url(Fondo2.png);}
+
+#bs-example-navbar-collapse-1{padding: 0px}
+
+.limenu{text-align: center;border-left: 1px solid #333;background-color: #1E202F;cursor: pointer;}
+
+.limenu:hover{background-color: #111}
+
+.ultimomenu{border-right: 1px solid #333;}
+
+#ul{padding-left: 0px; margin-left: 0px; margin-right: 0px;
+ margin: 0 auto;border-right: 1px solid #333;}
+
+@media (min-width:768px){
+	#ul{table-layout: fixed;}
+	#title{display: none}	
+	#Cuerpo{height: auto;max-height: 90% ;
+	width: 100%;max-width: 90%;margin: 0 auto;overflow-y: hidden;
+	box-shadow: 0px 2px #1E202F;}
+}
+@media(min-width: 960px){
+	#ul{width:100% ;max-width: 90%;display: table;}
+	#cabecera{background-image:url(Cabecera2.jpg);background-position: 50% 65%;
+	      background-size: 100% 115%;height: 25%;display: flex;justify-content: center;
+	      align-content: center;flex-direction: column;}	
+}
+
+@media(max-width: 959px){
+	#ul{width: 100%;max-width: 100%;display: table;padding: 0px}
+	#Cabecera{background-image:url(Cabecera2.jpg);background-position: 50% 65%;
+	      background-size: 110% 115%;height: 25%;display: flex;justify-content: center;
+	      align-content: center;flex-direction: column;}
+}
+@media(max-width: 767px){
+	#ul{float: left;width: 100%;max-width: 53%}
+	#Cabecera{display: none;}
+	#title{display: block;background-position: center;
+		font-size: 50px;text-shadow: 1px 1px 1px red;color: black;
+		font-weight: bold;}
+	.limenu > h2{font-size: 30px;padding: 0.5em;border-top: 1px solid #333}
+	#Cuerpo{height: auto;max-height: 90%; overflow-y:hidden; 
+	width: 100%;max-width: 100%;margin: 0 auto;
+	box-shadow: 0px 2px #1E202F}
+
+}
+
+.navbar-header{background-color: #1E202F;text-align: center;}
+.container-fluid{
+	padding-right: 0px;
+	padding-left: 0px;
+	}
+
+#menu{position: fixed;z-index: 1999999999;}
+
+
+.panel-footer{background-color: #1E202F;margin-top: 1em;text-align: center;
+	color: black;text-shadow: 1px 1px 1px red;font-weight: bold;font-size: 20px;
+
+position: static;
+bottom: 0;
+width: 100%;}
+
+.dataTables_length{visibility: hidden;}
+
+label, th,h3{
+	color: red;text-shadow: 0.1px 0.1px 0.1px white;text-align: center;
+}
+
+#inicio{height: 100%;max-height: 800px;top
+
+}
+
+
+
+
+

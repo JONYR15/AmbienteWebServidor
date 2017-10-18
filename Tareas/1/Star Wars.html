@@ -1,0 +1,255 @@
+<html>
+
+    <head>
+        <title>Star Wars http://swapi.co/</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        
+        <link rel="stylesheet" type="text/css" href=".\Jquery\jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href=".\Jquery\bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="Star Wars.css" title="style">    
+        
+       
+
+        
+    </head>
+
+    <body>
+
+    <header>
+        <div id=cabecera onclick="mostrar('inicio')">
+        
+         <h1>Star Wars</h1>
+         
+         </div>
+    </header>
+    
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <h2 id="title" onclick="mostrar('inicio')">Star Wars</h2>
+      
+    </div>
+
+
+     <div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1">
+
+        <ul id=ul class="nav navbar-nav">
+        
+             <li class="limenu"; onclick="mostrar('People'); return false" /> 
+             <h2 class="botones">People</h2>
+             </li>
+
+
+             <li class="limenu"; onclick="mostrar('Planets'); return false" />
+             <h2 class="botones">Planets</h2>
+             </li>
+
+             <li class="limenu";  onclick="mostrar('Spaceships'); return false" />
+             <h2 class="botones">Spaceships</h2>
+             </li>
+        
+             <li class="limenu";  onclick="mostrar('Vehicles'); return false" /> 
+             <h2 class="botones">Vehicles</h2>
+             </li>
+
+             <li class="limenu";  onclick="mostrar('Species'); return false" /> 
+             <h2 class="botones">Species</h2>
+             </li>        
+        
+             <li id="ultimomenu"; class="limenu";  onclick="mostrar('Films'); return false" /> 
+             <h2 class="botones">Films</h2>
+             </li>
+     
+        </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div id="Cuerpo">
+
+<div id="inicio">
+<h3>Introduccion</h3>
+    <p>Esta pagina esta diseñada para mostrar informacion sobre las peliculas de Star Wars, entre esto se incluyen sus tan conocidos personajes hasta las especies que se ven en cada una de los filmes, tambien se incluye los planetas los escenarios de cada una de las aventuras de estos personajes, no podia faltar los vehiculos ni las naves que estos utilizan </p>
+</div>
+
+    <div id="People" class="contenedor contenedor-personajes" style="display:none;">
+    <h3>Personajes</h3>
+    <h2 id="tabla-personajes-cargador">Cargando...</h2>
+
+    <table id="tabla-personajes" style="display:none;" class="display" cellspacing="0" width="100%">
+    <thead>      
+      <tr>
+        <th>Nombre</th>
+        <th>Altura</th>
+        <th>Masa</th>
+        <th>Color de Pelo</th>
+        <th>Color de Piel</th>
+        <th>Color de Ojos</th>
+        <th>Género</th>
+        <th>Fecha Nacimiento</th>
+      </tr>
+    </thead>
+    <tbody>     
+    </tbody>
+  </table>
+        
+    </div>
+    
+    <div id="Planets" style="display:none;" class="contenedor contenedor-planetas">
+    <h3>Planetas</h3>
+ 
+  <h2 id="tabla-planetas-cargador">Cargando...</h2>
+ 
+  <table id="tabla-planetas" style="display:none;" class="display" cellspacing="0" width="100%">
+    <thead>
+  
+      <tr>
+        <th>Nombre</th>
+        <th>periodo rotacion</th>
+        <th>periodo orbita</th>
+        <th>diametero</th>
+        <th>clima</th>
+        <th>gravedad</th>
+        <th>tierra</th>
+        <th>surface_water</th>
+        <th>population</th>        
+      </tr>
+    </thead>
+    <tbody>
+ 
+    </tbody>
+  </table>
+    </div>
+    
+    <div id="Spaceships" style="display:none;" class="contenedor contenedor-naves">
+    <h3>Naves</h3>
+<h2 id="tabla-naves-cargador">Cargando...</h2>
+<table id="tabla-naves" style="display: none" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Modelo</th>
+            <th>Manufacturera</th>
+            <th>Costo Creditos</th>
+            <th>Longitud</th>
+            <th>Velocidad</th>            
+            <th>Tripulación</th>
+            <th>Pasajeros</th>
+            <th>Capacidad</th>
+            <th>Consumables</th>
+            <th>Clasificación</th>
+            <th>MGLT</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>    
+    </div>
+
+
+<div id="Vehicles" style="display:none;" class="contenedor contenedor-vehiculos">
+  <h3>Vehiculos</h3>
+  <h2 id="tabla-Vehiculos-cargador">Cargando...</h2>
+  <table id="tabla-Vehiculos" style="display: none" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+        <th>Nombre</th>
+        <th>Modelo</th>
+        <th>Manufacturera</th>
+        <th>Costo</th>
+        <th>Longitud</th>
+        <th>Velocidad</th>
+        <th>Tripulación</th>
+        <th>Pasajeros</th>
+        <th>Capacidad Carga</th>
+        <th>Consumables</th>
+        <th>Clase Vehiculo</th>       
+      </tr>
+    </thead>
+    <tbody>        
+    </tbody>
+  </table>  
+    </div>
+    
+    
+    <div id="Species" style="display:none;" class="contenedor contenedor-especies">
+    <h3>Especies</h3>
+    <h2 id="tabla-especies-cargador">Cargando...</h2>
+    <table id="tabla-especies" style="display: none" class="display" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+                <th>clasificación</th>
+                <th>Designación</th>
+                <th>Altura</th>
+                <th>Color de piel</th>
+                <th>Color de pelo</th>
+                <th>color de ojos</th>
+                <th>Promedio de vida</th>
+                <th>Mundo Natal</th>
+                <th>Lenguaje</th>
+                <th>Personas</th>
+                <th>Filmes</th>
+      </tr>
+    </thead>
+        <tbody>
+          
+        </tbody>
+
+  </table>
+    </div>
+
+
+
+
+    <div id="Films" style="display:none;" class="contenedor contenedor-filmes">
+    <h3>Especies</h3>
+<h2 id="tabla-filmes-cargador">Cargando...</h2>
+  <table id="tabla-filmes" style="display: none" class="display" cellspacing="0" width="100%">
+    <thead>
+      <tr>        
+                <th>Episodio</th>
+                <th>Opening</th>
+                <th>Director</th>
+                <th>Productor</th>
+                <th>Fecha Lanzamiento</th>
+                
+      </tr>
+    </thead>
+        <tbody>
+          
+        </tbody>
+
+  </table>
+    </div>
+</div>
+
+<footer>
+<div class="panel-footer">
+    Pagina Web Creada por Nosotros XD
+</div>
+</footer>
+        
+        
+        <script src=".\Jquery\jquery-3.2.1.min.js"></script>        
+        <script src=".\Jquery\jquery.dataTables.min.js"></script>
+        <script src=".\Jquery\bootstrap.js"></script>
+        <script src=".\Jquery\DataTable.js"></script>
+        
+
+    </body>
+
+</html>
